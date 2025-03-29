@@ -309,6 +309,7 @@ img {
 .soc-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link {
@@ -319,6 +320,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.team-icon-soc {
+  fill: #f4f4fd;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: #404bbf;
 }
 
 /* Our Portfolio */
@@ -353,13 +363,16 @@ img {
   row-gap: 48px;
 }
 
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .gallery-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.gallery-item {
-  width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%);
 }
 
 .gallery-img {
